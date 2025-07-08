@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | John Doe</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #0a0a23;
+      color: #fff;
+      font-family: 'Poppins', Arial, sans-serif;
+    }
+    .navbar {
+      background: #13132b;
+    }
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      margin-right: 1rem;
+    }
+    .navbar-nav .nav-link.active {
+      color: #b39ddb !important;
+    }
+    .hero {
+      padding: 80px 0 40px 0;
+      text-align: center;
+      background: linear-gradient(180deg, #13132b 60%, #0a0a23 100%);
+    }
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+    .hero-title .highlight {
+      color: #b39ddb;
+    }
+    .hero-desc {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: #bdbdbd;
+    }
+    .btn-main {
+      background: #b39ddb;
+      color: #13132b;
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 0.7rem 2rem;
+      transition: background 0.2s;
+    }
+    .btn-main:hover {
+      background: #9575cd;
+      color: #fff;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .section-title .highlight {
+      color: #b39ddb;
+    }
+    .card {
+      background: #181836;
+      border: none;
+      border-radius: 18px;
+      box-shadow: 0 2px 16px 0 #0002;
+    }
+    .card-title {
+      color: #fff;
+      font-weight: 600;
+    }
+    .card-text {
+      color: #bdbdbd;
+    }
+    .testimonial {
+      background: #181836;
+      border-radius: 18px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      color: #bdbdbd;
+    }
+    .company-logos img {
+      max-height: 40px;
+      margin: 0 1rem 1rem 0;
+      opacity: 0.7;
+      filter: grayscale(1);
+    }
+    .experience-card {
+      background: #181836;
+      border-radius: 18px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      color: #bdbdbd;
+    }
+    .approach-phase {
+      background: #181836;
+      border-radius: 18px;
+      padding: 2rem 1rem;
+      text-align: center;
+      color: #bdbdbd;
+      margin-bottom: 1rem;
+    }
+    .footer {
+      text-align: center;
+      color: #bdbdbd;
+      padding: 2rem 0 1rem 0;
+      font-size: 0.95rem;
+    }
+    a, a:visited {
+      color: #b39ddb;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">John Doe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero ">
+    <div class="container border">
+      <h2 class="hero-title">Transformando conceptos en <span class="highlight">experiencias digitales</span></h2>
+      <p class="hero-desc">Hola, soy John Doe, desarrollador especializado en Next.js. Basado en Rusia.</p>
+      <a href="#contacto" class="btn btn-main">Ver mi trabajo</a>
+      <div class="row mt-5 justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&w=600" class="card-img-top rounded" alt="Laptop" style="object-fit:cover;height:180px;">
+            <div class="card-body">
+              <h5 class="card-title">Colaboración abierta</h5>
+              <p class="card-text">Priorizo la colaboración y la comunicación abierta con mis clientes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <div class="card-body">
+              <h5 class="card-title">Comunicación flexible</h5>
+              <p class="card-text">Me adapto a diferentes zonas horarias y estilos de comunicación.</p>
+              <span class="badge bg-secondary">USA</span>
+              <span class="badge bg-secondary">Europa</span>
+              <span class="badge bg-secondary">Asia</span>
+            </div>
+          </div>
+          <div class="card p-3 mt-3">
+            <div class="card-body">
+              <h5 class="card-title">Mi stack tecnológico</h5>
+              <span class="badge bg-primary">ReactJS</span>
+              <span class="badge bg-primary">NextJS</span>
+              <span class="badge bg-primary">TypeScript</span>
+              <span class="badge bg-primary">GraphQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Una pequeña selección de <span class="highlight">proyectos recientes</span></h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&w=600" class="card-img-top" alt="Proyecto 1">
+            <div class="card-body">
+              <h5 class="card-title">Planetas del Sistema Solar 3D</h5>
+              <p class="card-text">Explora el sistema solar con este sitio interactivo en 3D, mostrando los planetas y sus características.</p>
+              <a href="#" class="btn btn-link">Ver sitio</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&w=600" class="card-img-top" alt="Proyecto 2">
+            <div class="card-body">
+              <h5 class="card-title">App de videoconferencias</h5>
+              <p class="card-text">Simplifica tus reuniones con esta app de videoconferencias, integrando chat y colaboración en tiempo real.</p>
+              <a href="#" class="btn btn-link">Ver sitio</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&w=600" class="card-img-top" alt="Proyecto 3">
+            <div class="card-body">
+              <h5 class="card-title">SaaS de imágenes IA</h5>
+              <p class="card-text">Aplicación SaaS para generación y edición de imágenes con IA, pagos y sistema de usuarios.</p>
+              <a href="#" class="btn btn-link">Ver sitio</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg?auto=compress&w=600" class="card-img-top" alt="Proyecto 4">
+            <div class="card-body">
+              <h5 class="card-title">App animada para iPhone</h5>
+              <p class="card-text">Aplicación animada para iPhone, combinando efectos 3D y animaciones fluidas.</p>
+              <a href="#" class="btn btn-link">Ver sitio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Palabras de <span class="highlight">clientes satisfechos</span></h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial">
+            "Colaborar con John fue una experiencia increíble. Profesionalismo, puntualidad y dedicación en cada entrega. ¡Altamente recomendado!"
+            <div class="mt-2"><strong>Michele Johnson</strong>, CEO de TechInsights</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            "Siempre dispuesto a escuchar y proponer soluciones innovadoras. Si buscas elevar tu marca, John es la persona ideal."
+            <div class="mt-2"><strong>Alexei Volkov</strong>, Director Creativo</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            "Excelente comunicación y resultados sobresalientes. ¡Volvería a trabajar con él sin dudarlo!"
+            <div class="mt-2"><strong>Maria López</strong>, Fundadora de StartApp</div>
+          </div>
+        </div>
+      </div>
+      <div class="company-logos d-flex flex-wrap justify-content-center mt-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Cloudinary_logo.png" alt="Cloudinary">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Appwrite_logo.png" alt="Appwrite">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Hostinger_logo.png" alt="Hostinger">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Stream_logo.png" alt="Stream">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_logo.png" alt="Docker">
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section id="experiencia" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Mi <span class="highlight">experiencia laboral</span></h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="experience-card mb-3">
+            <h5>Frontend Engineer Intern</h5>
+            <p>Desarrollo de interfaces modernas y responsivas usando React y Next.js.</p>
+          </div>
+          <div class="experience-card mb-3">
+            <h5>Freelance App Dev Project</h5>
+            <p>Desarrollo de aplicaciones móviles y web para clientes internacionales.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="experience-card mb-3">
+            <h5>Mobile App Dev - JSM Tech</h5>
+            <p>Creación de apps móviles con animaciones avanzadas y experiencia de usuario optimizada.</p>
+          </div>
+          <div class="experience-card mb-3">
+            <h5>Lead Frontend Developer</h5>
+            <p>Liderazgo de equipos de desarrollo frontend, mentoría y revisión de código.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enfoque -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title">Mi <span class="highlight">enfoque</span></h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="approach-phase">Fase 1<br><strong>Descubrimiento & Planificación</strong><br>Reunión inicial para entender tus necesidades y definir el alcance del proyecto.</div>
+        </div>
+        <div class="col-md-4">
+          <div class="approach-phase">Fase 2<br><strong>Desarrollo & Progreso</strong><br>Actualizaciones constantes y comunicación transparente durante el desarrollo.</div>
+        </div>
+        <div class="col-md-4">
+          <div class="approach-phase">Fase 3<br><strong>Lanzamiento & Soporte</strong><br>Entrega final, soporte post-lanzamiento y seguimiento para asegurar el éxito.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">¿Listo para llevar tu presencia digital al <span class="highlight">siguiente nivel</span>?</h2>
+      <p>Contáctame hoy y descubre cómo puedo ayudarte a alcanzar tus objetivos.</p>
+      <a href="mailto:john.doe@email.com" class="btn btn-main">Contáctame ahora</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>Copyright © 2024 John Doe</div>
+    <div class="mt-2">
+      <a href="#"><i class="bi bi-github"></i></a>
+      <a href="#"><i class="bi bi-linkedin ms-2"></i></a>
+      <a href="#"><i class="bi bi-twitter ms-2"></i></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>

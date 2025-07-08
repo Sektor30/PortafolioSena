@@ -9,6 +9,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Google Fonts: Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
     body {
       background: #0c0c30;
@@ -144,11 +146,13 @@
       transition: box-shadow 0.2s, background 0.2s, filter 0.2s;
       border: none;
     }
+
     .contenidos .card:hover {
       box-shadow: 0 8px 40px 0 #0006;
       background: rgba(36, 36, 70, 0.95);
       filter: brightness(1.08);
     }
+
     .contenidos .card .card-title,
     .contenidos .card .card-text,
     .contenidos .card h5,
@@ -167,6 +171,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .contenidos .card-bg-img::before {
       content: "";
       position: absolute;
@@ -175,7 +180,8 @@
       opacity: 0.2;
       z-index: 0;
     }
-    .contenidos .card-bg-img > * {
+
+    .contenidos .card-bg-img>* {
       position: relative;
       z-index: 1;
     }
@@ -186,6 +192,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .contenidos .card-bg-img-anim::before {
       content: "";
       position: absolute;
@@ -194,7 +201,8 @@
       opacity: 0.2;
       z-index: 0;
     }
-    .contenidos .card-bg-img-anim > * {
+
+    .contenidos .card-bg-img-anim>* {
       position: relative;
       z-index: 1;
     }
@@ -332,8 +340,6 @@
         grid-template-columns: 1fr;
       }
     }
-
-    
   </style>
 </head>
 
@@ -344,14 +350,14 @@
     <div class="container-fluid justify-content-center p-0">
       <div class="collapse navbar-collapse show" id="navbarNav">
         <ul class="navbar-nav mx-auto flex-row gap-4">
-          
+
           <li class="nav-item ">
-          <a class="nav-link text-center m-auto  position-relative" href="#">logo<span
-            class="d-block position-absolute start-50 translate-middle-x"
-            style="bottom: -8px; width: 16px; height: 8px; border-radius: 50%; background: #fff; display: none;">
-          </span>
-        </a>
-      </li>
+            <a class="nav-link text-center m-auto  position-relative" href="#">logo<span
+                class="d-block position-absolute start-50 translate-middle-x"
+                style="bottom: -8px; width: 16px; height: 8px; border-radius: 50%; background: #fff; display: none;">
+              </span>
+            </a>
+          </li>
 
           <li class="nav-item">
             <a class="nav-link text-center m-auto active position-relative" href="#">About<span
@@ -390,9 +396,11 @@
       <div class="container-fluid d-flex flex-column justify-content-center align-items-center"
         style="height: 90vh; text-align: center;">
         <div class="row">
-          <h2 class="hero-title col-lg-8 col-md-12 col-sm-12 m-auto">Transformando conceptos en <span class="highlight">experiencias
+          <h2 class="hero-title col-lg-8 col-md-12 col-sm-12 m-auto">Transformando conceptos en <span
+              class="highlight">experiencias
               digitales</span></h2>
-          <p class="hero-desc pb-4 col-lg-8 col-md-12  m-auto">Hola, soy John Doe, desarrollador especializado en Next.js. Basado
+          <p class="hero-desc pb-4 col-lg-8 col-md-12  m-auto">Hola, soy John Doe, desarrollador especializado en
+            Next.js. Basado
             en Rusia.</p>
           <a href="#contacto" class="col-lg-6 col-md-12 m-auto btn-main mb-4" style="color: #fff;">Ver mi trabajo</a>
         </div>
@@ -421,23 +429,30 @@
       <!-- Tarjetas pequeñas a la derecha -->
       <div class="col-lg-6 d-flex flex-column gap-3">
         <div class="card p-3 flex-fill text-white card-bg-img" style="background: rgba(1, 1, 31, 0.85);">
-          <h6 class="mb-2 text-white ">Soy muy flexible con la comunicación en zonas horarias</h6>
-          <div>
+          <h6 class="mb-2 text-white col-lg-8 text-center m-auto  ">Soy muy flexible con la comunicación en zonas horarias</h6>
+          <div class="col-lg-10 text-center m-auto justify-content-center">
+            <span class="badge bg-secondary me-1">Colombia</span>
+            <span class="badge bg-secondary me-1">Brasil</span>
+            <span class="badge bg-secondary me-1">México</span>
+            <span class="badge bg-secondary me-1">Canadá</span>
             <span class="badge bg-secondary me-1">USA</span>
-            <span class="badge bg-secondary me-1">Rusia</span>
-            <span class="badge bg-secondary me-1">Alemania</span>
           </div>
         </div>
         <div class="card p-3 flex-fill text-white">
-          <div class="mb-1 text-muted" style="font-size:0.95em;">Siempre busco mejorar</div>
-          <h6 class="mb-2 text-white">Mi stack tecnológico</h6>
-          <div class="d-flex flex-wrap gap-2">
-            <span class="badge bg-primary">ReactJS</span>
-            <span class="badge bg-primary">Express</span>
-            <span class="badge bg-primary">Typescript</span>
-            <span class="badge bg-primary">VueJS</span>
-            <span class="badge bg-primary">NextJS</span>
-            <span class="badge bg-primary">GraphQL</span>
+          <div class="mb-1 px-3 text-white" style="font-size:0.95em;">Siempre busco mejorar</div>
+          <h6 class="mb-2 px-3 px-3 text-white">Mis habilidades</h6>
+          <div class="d-flex flex-wrap text-center m-auto gap-3 align-items-center justify-content-start fs-2">
+            <i class="fa-brands fa-html5" title="html" style="color:#fff;"></i>
+            <i class="fa-brands fa-css3-alt" title="css" style="color:#ffffff;"></i>
+            <i class="fa-brands fa-js" title="js" style="color:#ffffff;"></i>
+            <i class="fa-brands fa-node-js" title="Express" style="color:#ffffff;"></i>
+            <i class="fa-brands fa-react" title="ReactJS" style="color:#ffffff;"></i>
+            <i class="fa-solid fa-bolt" title="GraphQL" style="color:#ffffff;"></i>
+            <i class="fa-solid fa-film" title="editor" style="color:#ffffff;"></i>
+            <i class="fa-solid fa-paintbrush" title="ilustracion" style="color:#ffffff;"></i>
+            <i class="fa-solid fa-palette" title="retoquedigital" style="color:#ffffff;"></i>
+            <i class="fa-solid fa-camenra" title="photo" style="color:#ffffff;"></i>
+            <i class="fa-solid fa-pencil" title="ilustracionanimacion" style="color:#ffffff;"></i>
           </div>
         </div>
       </div>

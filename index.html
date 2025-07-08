@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,8 @@
       color: #fff;
       font-family: 'Poppins', Arial, sans-serif;
     }
-  /*   .navbar {
+
+    /*   .navbar {
       background: #171755;
     } */
     .navbar-nav .nav-link {
@@ -22,16 +24,19 @@
       font-weight: 500;
       margin-right: 1rem;
     }
+
     .navbar-nav .nav-link.active {
       color: #b39ddb !important;
     }
+
     /* --- NAVBAR CUSTOM --- */
     .navbar-nav .nav-item {
-    /*   border: 1px solid #fff; */
+      /*   border: 1px solid #fff; */
       border-radius: 16px;
       transition: border 0.2s;
       position: relative;
     }
+
     /* .navbar-nav .nav-item:hover {
       border: 3px solid #fff;
     } */
@@ -39,10 +44,12 @@
       display: none !important;
       transition: background 0.2s;
     }
+
     .navbar-nav .nav-item:hover .nav-link span {
       display: block !important;
       background: #fff;
     }
+
     /* Punto blanco animado al hacer hover */
     .navbar-nav .nav-link span {
       bottom: -8px;
@@ -54,6 +61,7 @@
       left: 50%;
       transform: translateX(-50%);
     }
+
     .hero {
       padding: 80px 0 40px 0;
       text-align: center;
@@ -63,22 +71,27 @@
       align-items: center;
       justify-content: center;
     }
+
     .hero .container {
       width: 100%;
     }
+
     .hero-title {
       font-size: 2.5rem;
       font-weight: 700;
       line-height: 1.1;
     }
+
     .hero-title .highlight {
       color: #b39ddb;
     }
+
     .hero-desc {
       font-size: 1.2rem;
       margin-bottom: 1.5rem;
       color: #bdbdbd;
     }
+
     .btn-main {
       background: #b39ddb;
       color: #13132b;
@@ -87,32 +100,39 @@
       padding: 0.7rem 2rem;
       transition: background 0.2s;
     }
+
     .btn-main:hover {
       background: #9575cd;
       color: #fff;
     }
+
     .section-title {
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 2rem;
       text-align: center;
     }
+
     .section-title .highlight {
       color: #b39ddb;
     }
+
     .card {
       background: #181836;
       border: none;
       border-radius: 18px;
       box-shadow: 0 2px 16px 0 #0002;
     }
+
     .card-title {
       color: #fff;
       font-weight: 600;
     }
+
     .card-text {
       color: #bdbdbd;
     }
+
     .testimonial {
       background: #181836;
       border-radius: 18px;
@@ -120,12 +140,14 @@
       margin-bottom: 1rem;
       color: #bdbdbd;
     }
+
     .company-logos img {
       max-height: 40px;
       margin: 0 1rem 1rem 0;
       opacity: 0.7;
       filter: grayscale(1);
     }
+
     .experience-card {
       background: #181836;
       border-radius: 18px;
@@ -133,6 +155,7 @@
       margin-bottom: 1rem;
       color: #bdbdbd;
     }
+
     .approach-phase {
       background: #181836;
       border-radius: 18px;
@@ -141,26 +164,32 @@
       color: #bdbdbd;
       margin-bottom: 1rem;
     }
+
     .footer {
       text-align: center;
       color: #bdbdbd;
       padding: 2rem 0 1rem 0;
       font-size: 0.95rem;
     }
-    a, a:visited {
+
+    a,
+    a:visited {
       color: #b39ddb;
       text-decoration: none;
     }
+
     a:hover {
       color: #fff;
       text-decoration: underline;
     }
+
     /* Grid de proyectos */
     #proyectos .proyectos-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
     }
+
     #proyectos .proyectos-card {
       display: flex;
       flex-direction: column;
@@ -171,6 +200,7 @@
       box-shadow: 0 2px 16px 0 #0002;
       overflow: hidden;
     }
+
     #proyectos .proyectos-card img {
       width: 100%;
       height: 200px;
@@ -178,6 +208,7 @@
       border-top-left-radius: 18px;
       border-top-right-radius: 18px;
     }
+
     #proyectos .proyectos-card .card-body {
       flex: 1 1 auto;
       display: flex;
@@ -185,17 +216,20 @@
       justify-content: space-between;
       padding: 1.5rem;
     }
+
     @media (max-width: 991px) {
       #proyectos .proyectos-grid {
         grid-template-columns: 1fr;
       }
     }
+
     /* Testimonios: igualar altura de cada testimonial */
     #testimonios .testimonios-grid {
       display: flex;
       gap: 2rem;
       flex-wrap: wrap;
     }
+
     #testimonios .testimonial {
       flex: 1 1 0;
       min-width: 280px;
@@ -205,16 +239,19 @@
       justify-content: center;
       height: 100%;
     }
+
     @media (max-width: 991px) {
       #testimonios .testimonios-grid {
         flex-direction: column;
       }
     }
+
     .enfoque-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
     }
+
     .enfoque-grid .approach-phase {
       min-height: 600px;
       height: 600px;
@@ -223,6 +260,7 @@
       justify-content: center;
       align-items: center;
     }
+
     @media (max-width: 991px) {
       .enfoque-grid {
         grid-template-columns: 1fr;
@@ -230,16 +268,42 @@
     }
   </style>
 </head>
+
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background: #10102000; box-shadow: 0 2px 16px 0 #0002; border-radius: 20px; margin: 32px auto 0 auto; max-width: 520px; padding: 0.8rem 2rem 0.5rem 2rem;">
+  <nav class="navbar navbar-expand-lg navbar-dark"
+    style="background: #10102000; box-shadow: 0 2px 16px 0 #0002; border-radius: 20px; margin: 32px auto 0 auto; max-width: 520px; padding: 0.8rem 2rem 0.5rem 2rem;">
     <div class="container-fluid justify-content-center p-0">
       <div class="collapse navbar-collapse show" id="navbarNav">
         <ul class="navbar-nav mx-auto flex-row gap-4">
-          <li class="nav-item"><a class="nav-link text-center m-auto active position-relative" href="#">About<span class="d-block position-absolute start-50 translate-middle-x" style="bottom: -8px; width: 8px; height: 8px; border-radius: 50%; background: #fff; display: none;"></span></a></li>
-          <li class="nav-item"><a class="nav-link position-relative text-center m-auto" href="#proyectos">Projects<span class="d-block position-absolute start-50 translate-middle-x" style="bottom: -8px; width: 8px; height: 8px; border-radius: 50%; background: #fff; display: none;"></span></a></li>
-          <li class="nav-item"><a class="nav-link position-relative text-center m-auto" href="#testimonios">Testimonials<span class="d-block position-absolute start-50 translate-middle-x" style="bottom: -8px; width: 8px; height: 8px; border-radius: 50%; background: #fff; display: none;"></span></a></li>
-          <li class="nav-item"><a class="nav-link position-relative text-center m-auto" href="#contacto">Contact<span class="d-block position-absolute start-50 translate-middle-x" style="bottom: -8px; width: 8px; height: 8px; border-radius: 50%; background: #fff; display: none;"></span></a></li>
+          
+          <li class="nav-item ">
+          <a class="nav-link text-center m-auto  position-relative" href="#">logo<span
+            class="d-block position-absolute start-50 translate-middle-x"
+            style="bottom: -8px; width: 16px; height: 8px; border-radius: 50%; background: #fff; display: none;">
+          </span>
+        </a>
+      </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-center m-auto active position-relative" href="#">About<span
+                class="d-block position-absolute start-50 translate-middle-x"
+                style="bottom: -8px; width: 8px; height: 8px; border-radius: 50%; background: #fff; display: none;">
+              </span>
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link position-relative text-center m-auto" href="#proyectos">Projects<span
+                class="d-block position-absolute start-50 translate-middle-x"
+                style="bottom: -8px; width: 8px; height: 8px; border-radius: 50%; background: #fff; display: none;"></span></a>
+          </li>
+          <li class="nav-item"><a class="nav-link position-relative text-center m-auto"
+              href="#testimonios">Testimonials<span class="d-block position-absolute start-50 translate-middle-x"
+                style="bottom: -8px; width: 8px; height: 8px; border-radius: 50%; background: #fff; display: none;"></span></a>
+          </li>
+          <li class="nav-item"><a class="nav-link position-relative text-center m-auto" href="#contacto">Contact<span
+                class="d-block position-absolute start-50 translate-middle-x"
+                style="bottom: -8px; width: 8px; height: 8px; border-radius: 50%; background: #fff; display: none;"></span></a>
+          </li>
         </ul>
       </div>
     </div>
@@ -251,87 +315,95 @@
 
   <!-- Hero -->
 
-  
+
   <section class="hero ">
     <div class="container ">
-        <!-- banner -->
-        <div class="container-fluid d-flex flex-column justify-content-center align-items-center" style="height: 90vh; text-align: center;">
+      <!-- banner -->
+      <div class="container-fluid d-flex flex-column justify-content-center align-items-center"
+        style="height: 90vh; text-align: center;">
         <div class="row">
-          <h2 class="hero-title col-lg-8 m-auto">Transformando conceptos en <span class="highlight">experiencias digitales</span></h2>
-          <p class="hero-desc pb-4 col-lg-8 m-auto">Hola, soy John Doe, desarrollador especializado en Next.js. Basado en Rusia.</p>
-          <a href="#contacto" class="col-lg-6 m-auto btn-main mb-4" style="color: #fff;">Ver mi trabajo</a>
+          <h2 class="hero-title col-lg-8 col-md-12 col-sm-12 m-auto">Transformando conceptos en <span class="highlight">experiencias
+              digitales</span></h2>
+          <p class="hero-desc pb-4 col-lg-8 col-md-12  m-auto">Hola, soy John Doe, desarrollador especializado en Next.js. Basado
+            en Rusia.</p>
+          <a href="#contacto" class="col-lg-6 col-md-12 m-auto btn-main mb-4" style="color: #fff;">Ver mi trabajo</a>
         </div>
-        </div>
-<!-- banner -->
+      </div>
+      <!-- banner -->
+  </section>
 
-
-
-      <div class="row gx-4 gy-4 align-items-stretch">
-        <!-- Tarjeta grande con imagen y texto -->
-        <div class="col-lg-6">
-          <div class="card p-0 h-100" style="background: linear-gradient(135deg, #181836 80%, #b39ddb22 100%); overflow:hidden;">
-            <div class="row g-0 align-items-center h-100">
-              <div class="col-12">
-                <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&w=600" class="img-fluid rounded-top" alt="Laptop" style="object-fit:cover;width:100%;height:220px;">
-              </div>
-              <div class="col-12 p-4">
-                <h5 class="card-title mb-2">Priorizo la colaboración con el cliente, fomentando la comunicación abierta</h5>
-              </div>
+  <div class="container  pt-4">
+    <div class="row gx-4 gy-4 align-items-stretch">
+      <!-- Tarjeta grande con imagen y texto -->
+      <div class="col-lg-6">
+        <div class="card p-0 h-100 text-white"
+          style="background: linear-gradient(135deg, #181836 80%, #b39ddb22 100%); overflow:hidden;">
+          <div class="row g-0 align-items-center h-100">
+            <div class="col-12">
+              <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&w=600"
+                class="img-fluid rounded-top" alt="Laptop" style="object-fit:cover;width:100%;height:220px;">
             </div>
-          </div>
-        </div>
-        <!-- Tarjetas pequeñas a la derecha -->
-        <div class="col-lg-6 d-flex flex-column gap-3">
-          <div class="card p-3 flex-fill">
-            <h6 class="mb-2">Soy muy flexible con la comunicación en zonas horarias</h6>
-            <div>
-              <span class="badge bg-secondary me-1">USA</span>
-              <span class="badge bg-secondary me-1">Rusia</span>
-              <span class="badge bg-secondary me-1">Alemania</span>
-            </div>
-          </div>
-          <div class="card p-3 flex-fill">
-            <div class="mb-1 text-muted" style="font-size:0.95em;">Siempre busco mejorar</div>
-            <h6 class="mb-2">Mi stack tecnológico</h6>
-            <div class="d-flex flex-wrap gap-2">
-              <span class="badge bg-primary">ReactJS</span>
-              <span class="badge bg-primary">Express</span>
-              <span class="badge bg-primary">Typescript</span>
-              <span class="badge bg-primary">VueJS</span>
-              <span class="badge bg-primary">NextJS</span>
-              <span class="badge bg-primary">GraphQL</span>
+            <div class="col-12 p-4">
+              <h5 class="card-title mb-2 text-white">Priorizo la colaboración con el cliente, fomentando la comunicación
+                abierta</h5>
             </div>
           </div>
         </div>
       </div>
-      <!-- Segunda fila de tarjetas -->
-      <div class="row gx-4 gy-4 mt-1 align-items-stretch">
-        <div class="col-md-4">
-          <div class="card p-3 h-100">
-            <div class="mb-2">Apasionado por la tecnología y el desarrollo.</div>
-            <div class="text-muted" style="font-size:0.95em;">¿Quieres iniciar un proyecto juntos?</div>
-            <a href="#contacto" class="btn btn-sm btn-main mt-2">Copiar mi email</a>
+      <!-- Tarjetas pequeñas a la derecha -->
+      <div class="col-lg-6 d-flex flex-column gap-3">
+        <div class="card p-3 flex-fill text-white">
+          <h6 class="mb-2 text-white">Soy muy flexible con la comunicación en zonas horarias</h6>
+          <div>
+            <span class="badge bg-secondary me-1">USA</span>
+            <span class="badge bg-secondary me-1">Rusia</span>
+            <span class="badge bg-secondary me-1">Alemania</span>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card p-3 h-100">
-            <div class="text-uppercase text-muted mb-1" style="font-size:0.85em;">The inside scoop</div>
-            <div class="fw-bold mb-2">Actualmente construyendo una librería de animaciones JS</div>
+        <div class="card p-3 flex-fill text-white">
+          <div class="mb-1 text-muted" style="font-size:0.95em;">Siempre busco mejorar</div>
+          <h6 class="mb-2 text-white">Mi stack tecnológico</h6>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-primary">ReactJS</span>
+            <span class="badge bg-primary">Express</span>
+            <span class="badge bg-primary">Typescript</span>
+            <span class="badge bg-primary">VueJS</span>
+            <span class="badge bg-primary">NextJS</span>
+            <span class="badge bg-primary">GraphQL</span>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card p-3 h-100" style="background:#181836;">
-            <pre class="mb-0" style="color:#b39ddb; background:transparent; font-size:0.95em;">
+      </div>
+    </div>
+
+    <!-- Segunda fila de tarjetas -->
+    <div class="row gx-4 gy-4 mt-1 align-items-stretch ">
+      <div class="col-md-4">
+        <div class="card p-3 h-100 text-white">
+          <div class="mb-2 text-white">Apasionado por la tecnología y el desarrollo.</div>
+          <div class="text-muted" style="font-size:0.95em;">¿Quieres iniciar un proyecto juntos?</div>
+          <a href="#contacto" class="btn btn-sm btn-main mt-2 text-white">Copiar mi email</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 h-100 text-white">
+          <div class="text-uppercase text-muted mb-1" style="font-size:0.85em;">The inside scoop</div>
+          <div class="fw-bold mb-2 text-white">Actualmente construyendo una librería de animaciones JS</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 h-100 text-white" style="background:#181836;">
+          <pre class="mb-0" style="color:#b39ddb; background:transparent; font-size:0.95em;">
 // Importando un solo módulo
 import moduleName from 'modulePath';
 // Importando múltiples módulos
 import { module1, module2 } from 'modulePath';
             </pre>
-          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+
+  </div>
 
   <!-- Proyectos -->
   <section id="proyectos" class="py-5">
@@ -339,31 +411,38 @@ import { module1, module2 } from 'modulePath';
       <h2 class="section-title">Una pequeña selección de <span class="highlight">proyectos recientes</span></h2>
       <div class="proyectos-grid">
         <div class="proyectos-card">
-          <img src="https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&w=600" alt="Proyecto 1">
+          <img src="https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&w=600"
+            alt="Proyecto 1">
           <div class="card-body">
             <h5 class="card-title">Planetas del Sistema Solar 3D</h5>
-            <p class="card-text">Explora el sistema solar con este sitio interactivo en 3D, mostrando los planetas y sus características.</p>
+            <p class="card-text">Explora el sistema solar con este sitio interactivo en 3D, mostrando los planetas y sus
+              características.</p>
             <a href="#" class="btn btn-link">Ver sitio</a>
           </div>
         </div>
         <div class="proyectos-card">
-          <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&w=600" alt="Proyecto 2">
+          <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&w=600"
+            alt="Proyecto 2">
           <div class="card-body">
             <h5 class="card-title">App de videoconferencias</h5>
-            <p class="card-text">Simplifica tus reuniones con esta app de videoconferencias, integrando chat y colaboración en tiempo real.</p>
+            <p class="card-text">Simplifica tus reuniones con esta app de videoconferencias, integrando chat y
+              colaboración en tiempo real.</p>
             <a href="#" class="btn btn-link">Ver sitio</a>
           </div>
         </div>
         <div class="proyectos-card">
-          <img src="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&w=600" alt="Proyecto 3">
+          <img src="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&w=600"
+            alt="Proyecto 3">
           <div class="card-body">
             <h5 class="card-title">SaaS de imágenes IA</h5>
-            <p class="card-text">Aplicación SaaS para generación y edición de imágenes con IA, pagos y sistema de usuarios.</p>
+            <p class="card-text">Aplicación SaaS para generación y edición de imágenes con IA, pagos y sistema de
+              usuarios.</p>
             <a href="#" class="btn btn-link">Ver sitio</a>
           </div>
         </div>
         <div class="proyectos-card">
-          <img src="https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg?auto=compress&w=600" alt="Proyecto 4">
+          <img src="https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg?auto=compress&w=600"
+            alt="Proyecto 4">
           <div class="card-body">
             <h5 class="card-title">App animada para iPhone</h5>
             <p class="card-text">Aplicación animada para iPhone, combinando efectos 3D y animaciones fluidas.</p>
@@ -381,13 +460,15 @@ import { module1, module2 } from 'modulePath';
       <div class="row">
         <div class="col-md-4">
           <div class="testimonial">
-            "Colaborar con John fue una experiencia increíble. Profesionalismo, puntualidad y dedicación en cada entrega. ¡Altamente recomendado!"
+            "Colaborar con John fue una experiencia increíble. Profesionalismo, puntualidad y dedicación en cada
+            entrega. ¡Altamente recomendado!"
             <div class="mt-2"><strong>Michele Johnson</strong>, CEO de TechInsights</div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="testimonial">
-            "Siempre dispuesto a escuchar y proponer soluciones innovadoras. Si buscas elevar tu marca, John es la persona ideal."
+            "Siempre dispuesto a escuchar y proponer soluciones innovadoras. Si buscas elevar tu marca, John es la
+            persona ideal."
             <div class="mt-2"><strong>Alexei Volkov</strong>, Director Creativo</div>
           </div>
         </div>
@@ -442,9 +523,12 @@ import { module1, module2 } from 'modulePath';
     <div class="container">
       <h2 class="section-title">Mi <span class="highlight">enfoque</span></h2>
       <div class="enfoque-grid">
-        <div class="approach-phase">Fase 1<br><strong>Descubrimiento & Planificación</strong><br>Reunión inicial para entender tus necesidades y definir el alcance del proyecto.</div>
-        <div class="approach-phase">Fase 2<br><strong>Desarrollo & Progreso</strong><br>Actualizaciones constantes y comunicación transparente durante el desarrollo.</div>
-        <div class="approach-phase">Fase 3<br><strong>Lanzamiento & Soporte</strong><br>Entrega final, soporte post-lanzamiento y seguimiento para asegurar el éxito.</div>
+        <div class="approach-phase">Fase 1<br><strong>Descubrimiento & Planificación</strong><br>Reunión inicial para
+          entender tus necesidades y definir el alcance del proyecto.</div>
+        <div class="approach-phase">Fase 2<br><strong>Desarrollo & Progreso</strong><br>Actualizaciones constantes y
+          comunicación transparente durante el desarrollo.</div>
+        <div class="approach-phase">Fase 3<br><strong>Lanzamiento & Soporte</strong><br>Entrega final, soporte
+          post-lanzamiento y seguimiento para asegurar el éxito.</div>
       </div>
     </div>
   </section>
@@ -452,7 +536,8 @@ import { module1, module2 } from 'modulePath';
   <!-- Contacto -->
   <section id="contacto" class="py-5">
     <div class="container text-center col-lg-6">
-      <h2 class="section-title">¿Listo para llevar tu presencia digital al <span class="highlight">siguiente nivel</span>?</h2>
+      <h2 class="section-title">¿Listo para llevar tu presencia digital al <span class="highlight">siguiente
+          nivel</span>?</h2>
       <p>Contáctame hoy y descubre cómo puedo ayudarte a alcanzar tus objetivos.</p>
       <a href="mailto:john.doe@email.com" class="btn btn-main">Contáctame ahora</a>
     </div>
@@ -473,4 +558,5 @@ import { module1, module2 } from 'modulePath';
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </body>
+
 </html>

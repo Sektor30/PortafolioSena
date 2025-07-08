@@ -190,6 +190,44 @@
         grid-template-columns: 1fr;
       }
     }
+    /* Testimonios: igualar altura de cada testimonial */
+    #testimonios .testimonios-grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    #testimonios .testimonial {
+      flex: 1 1 0;
+      min-width: 280px;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+    @media (max-width: 991px) {
+      #testimonios .testimonios-grid {
+        flex-direction: column;
+      }
+    }
+    .enfoque-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .enfoque-grid .approach-phase {
+      min-height: 600px;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (max-width: 991px) {
+      .enfoque-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -339,7 +377,7 @@ import { module1, module2 } from 'modulePath';
   <!-- Testimonios -->
   <section id="testimonios" class="py-5">
     <div class="container">
-      <h2 class="section-title">Palabras de <span class="highlight">clientes satisfechos</span></h2>
+      <h2 class="section-title">Mis <span class="highlight">artículos</span></h2>
       <div class="row">
         <div class="col-md-4">
           <div class="testimonial">
@@ -403,16 +441,10 @@ import { module1, module2 } from 'modulePath';
   <section class="py-5">
     <div class="container">
       <h2 class="section-title">Mi <span class="highlight">enfoque</span></h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="approach-phase">Fase 1<br><strong>Descubrimiento & Planificación</strong><br>Reunión inicial para entender tus necesidades y definir el alcance del proyecto.</div>
-        </div>
-        <div class="col-md-4">
-          <div class="approach-phase">Fase 2<br><strong>Desarrollo & Progreso</strong><br>Actualizaciones constantes y comunicación transparente durante el desarrollo.</div>
-        </div>
-        <div class="col-md-4">
-          <div class="approach-phase">Fase 3<br><strong>Lanzamiento & Soporte</strong><br>Entrega final, soporte post-lanzamiento y seguimiento para asegurar el éxito.</div>
-        </div>
+      <div class="enfoque-grid">
+        <div class="approach-phase">Fase 1<br><strong>Descubrimiento & Planificación</strong><br>Reunión inicial para entender tus necesidades y definir el alcance del proyecto.</div>
+        <div class="approach-phase">Fase 2<br><strong>Desarrollo & Progreso</strong><br>Actualizaciones constantes y comunicación transparente durante el desarrollo.</div>
+        <div class="approach-phase">Fase 3<br><strong>Lanzamiento & Soporte</strong><br>Entrega final, soporte post-lanzamiento y seguimiento para asegurar el éxito.</div>
       </div>
     </div>
   </section>

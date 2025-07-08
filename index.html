@@ -430,18 +430,18 @@
     <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:1;">
       <div id="heroVideoCarousel" class="carousel slide h-100" data-bs-ride="carousel">
         <div class="carousel-inner h-100">
-          <div class="carousel-item active h-100">
-            <video src="https://github.com/satelite30/myprofile/blob/main/VOXEL5.mp4?raw=true" class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline style="object-fit:cover;"></video>
+          <!-- <div class="carousel-item active h-100">
+            <video src="https://github.com/satelite30/myprofile/blob/main/VOXEL5.mp4?raw=true" class="w-100 h-100 object-fit-cover hero-video" autoplay loop muted playsinline style="object-fit:cover;"></video>
+          </div> -->
+          <!-- <div class="carousel-item h-100">
+            <video src="https://github.com/satelite30/myprofile/blob/main/VOXEL5.mp4?raw=true" class="w-100 h-100 object-fit-cover hero-video" autoplay loop muted playsinline style="object-fit:cover;"></video>
           </div>
           <div class="carousel-item h-100">
-            <video src="https://github.com/satelite30/myprofile/blob/main/VOXEL5.mp4?raw=true" class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline style="object-fit:cover;"></video>
+            <video src="https://github.com/satelite30/myprofile/blob/main/VOXEL5.mp4?raw=true" class="w-100 h-100 object-fit-cover hero-video" autoplay loop muted playsinline style="object-fit:cover;"></video>
           </div>
           <div class="carousel-item h-100">
-            <video src="https://github.com/satelite30/myprofile/blob/main/VOXEL5.mp4?raw=true" class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline style="object-fit:cover;"></video>
-          </div>
-          <div class="carousel-item h-100">
-            <video src="https://github.com/satelite30/myprofile/blob/main/VOXEL5.mp4?raw=true" class="w-100 h-100 object-fit-cover" autoplay loop muted playsinline style="object-fit:cover;"></video>
-          </div>
+            <video src="https://github.com/satelite30/myprofile/blob/main/VOXEL5.mp4?raw=true" class="w-100 h-100 object-fit-cover hero-video" autoplay loop muted playsinline style="object-fit:cover;"></video>
+          </div> -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#heroVideoCarousel" data-bs-slide="prev" style="z-index:2;">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -720,6 +720,35 @@ import { module1, module2 } from 'modulePath';
       link.addEventListener('click', function () {
         if (window.innerWidth < 992) {
           navCollapse.classList.remove('show');
+        }
+      });
+    });
+
+    // --- Carrusel de videos: avanzar solo cuando termine el video ---
+    document.addEventListener('DOMContentLoaded', function () {
+      const carousel = document.getElementById('heroVideoCarousel');
+      if (!carousel) return;
+      const bsCarousel = bootstrap.Carousel.getOrCreateInstance(carousel);
+      const videos = carousel.querySelectorAll('.carousel-item video');
+      let changing = false;
+      videos.forEach((video, idx) => {
+        // Quitar loop para controlar manualmente
+        video.removeAttribute('loop');
+        video.addEventListener('ended', function () {
+          if (changing) return;
+          changing = true;
+          setTimeout(() => {
+            bsCarousel.next();
+            changing = false;
+          }, 2000);
+        });
+      });
+      // Al cambiar de slide, reiniciar el video
+      carousel.addEventListener('slid.bs.carousel', function (e) {
+        const current = carousel.querySelector('.carousel-item.active video');
+        if (current) {
+          current.currentTime = 0;
+          current.play();
         }
       });
     });
